@@ -8,8 +8,6 @@ WORKDIR /app
 COPY pom.xml .
 COPY src ./src
 
-# Build the project (skip tests if you want faster builds)
-RUN mvn clean package -DskipTests
 
 # Second stage: minimal runtime image
 FROM eclipse-temurin:17-jre
