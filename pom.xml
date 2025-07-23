@@ -81,6 +81,14 @@
         <artifactId>maven-hpi-plugin</artifactId>
         <version>3.16</version>
       </plugin>
+             <plugin>
+  <groupId>org.jenkins-ci.tools</groupId>
+  <artifactId>maven-hpi-plugin</artifactId>
+  <version>3.16</version>
+  <configuration>
+    <minimumJavaVersion>17</minimumJavaVersion> <!-- or 17 depending on your base image -->
+  </configuration>
+</plugin>
     </plugins>
   </build>
 </project>
